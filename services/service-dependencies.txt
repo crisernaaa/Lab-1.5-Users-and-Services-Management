@@ -1,0 +1,12 @@
+# Service Dependencies Report
+# Generated on: 2025-09-29
+
+## Overview
+This report documents the dependencies of key services on the system. Dependencies were checked using `systemctl list-dependencies <service>`.
+
+---
+
+## SSH (sshd)
+### Command:
+```bash
+systemctl list-dependencies ssh

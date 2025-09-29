@@ -1,0 +1,19 @@
+# Permissions Matrix
+# Generated on: 2025-09-29
+
+## Overview
+This matrix shows users, their groups, and the permissions associated with each group in the lab environment.
+
+| User    | Group(s)             | Permissions / Capabilities                          |
+|---------|---------------------|----------------------------------------------------|
+| alice   | developers          | Access to development resources, read/write files in dev directories |
+|         | administrators      | Full administrative privileges (sudo), manage users and groups |
+| bob     | developers          | Access to development resources, read/write files in dev directories |
+| charlie | testers             | Access to test environments, execute test scripts, read-only access to dev directories |
+
+## Notes
+- Permissions are role-based, aligned with group membership.
+- Administrative privileges for alice are granted via `sudo`.
+- All users have home directories with standard ownership and default permissions.
+- Changes in group membership or sudoers configuration are documented in `sudoers-changes.txt`.
+- This matrix is for lab practice only and should not be used in production.

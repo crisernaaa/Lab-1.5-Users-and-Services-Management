@@ -1,0 +1,15 @@
+# System Performance Report
+# Generated on: 2025-09-29
+
+## Memory Usage
+# free -h
+1.1 gi
+
+## Disk Usage
+# df -h
+3.8 Gi
+
+## Notes
+- This file will be automatically updated when running `system-performance.sh`.
+- Contains snapshot of system resources, CPU, memory, disk, load average, and top processes.
+- Useful for monitoring performance trends and troubleshooting resource issues.

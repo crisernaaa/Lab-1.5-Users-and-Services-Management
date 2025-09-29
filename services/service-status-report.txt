@@ -1,0 +1,12 @@
+# Service Status Report
+# Generated on: 2025-09-29
+
+## Overview
+This report summarizes the status of key services on the system, including both standard and custom services.
+
+## Standard Services
+
+### SSH (sshd)
+- Status:
+```bash
+systemctl status ssh

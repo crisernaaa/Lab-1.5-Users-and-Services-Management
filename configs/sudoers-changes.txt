@@ -1,0 +1,21 @@
+# Sudoers Changes Report
+# Generated on: 2025-09-29
+
+## Overview
+This file documents changes made to the sudoers configuration for lab practice. It includes users granted administrative privileges and notes on how the changes were applied.
+
+## Users with Sudo Privileges
+
+| User  | Privileges                                      | Notes |
+|-------|------------------------------------------------|-------|
+| alice | Full administrative privileges (sudo)          | Added to the sudo group to perform administrative tasks. Verified with `sudo -l`. |
+| bob   | None                                           | Regular user, no sudo access in this lab environment. |
+| charlie | None                                         | Regular user, no sudo access in this lab environment. |
+
+## Commands Executed
+```bash
+# Add alice to the sudo group (if not already)
+sudo usermod -aG sudo alice
+
+# Verify sudo privileges
+sudo -l -U alice

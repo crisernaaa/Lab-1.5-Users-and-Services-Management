@@ -1,0 +1,30 @@
+# Groups Configuration Report
+# Generated on: 2025-09-29
+
+## Groups and Assigned Users
+
+### Group: developers
+- Users:
+  - alice
+  - bob
+- Description: Users involved in development tasks.  
+- Notes: Both users can access development resources; membership verified with `groups <username>`.
+
+### Group: testers
+- Users:
+  - charlie
+- Description: Users responsible for testing activities.  
+- Notes: Membership verified; only testing-related permissions assigned.
+
+### Group: administrators
+- Users:
+  - alice
+- Description: Users with elevated privileges for system administration tasks.  
+- Notes: alice can execute administrative commands using sudo. Verified with `id alice` and `groups alice`.
+
+## Commands Used
+- Create groups (if not existing):
+```bash
+sudo groupadd developers
+sudo groupadd testers
+sudo groupadd administrators

@@ -1,0 +1,28 @@
+# Users Created Report
+# Generated on: 2025-09-29
+
+## User: alice
+- Passwords (for lab practice only):
+  1. Al1c3!2025
+  2. @lice_R3dHat
+  3. S3cur3.Alice#
+- Groups: developers, administrators
+
+## User: bob
+- Passwords (for lab practice only):
+  1. B0b!_Blue42
+  2. Passw0rd#Bob
+  3. B0b2025$Test
+- Groups: developers
+
+## User: charlie
+- Passwords (for lab practice only):
+  1. Ch@rlie_123!
+  2. Charl13$Lab
+  3. C#2025_SysAdm
+- Groups: testers
+
+## Notes
+- All users were created with home directories.
+- Group membership verified using `id <username>` and `groups <username>`.
+- This file is for reference in lab environment only.

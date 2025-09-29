@@ -1,0 +1,38 @@
+# Service Logs Analysis
+# Generated on: 2025-09-29
+
+## Overview
+This file documents the analysis of logs for key services on the system.
+
+## SSH (sshd)
+### Command:
+sudo journalctl -u ssh --since "1 hour ago"
+### Observations:
+- Verified successful logins and authentication attempts.
+- No critical errors detected in the last hour.
+
+## Cron
+### Command:
+sudo journalctl -u cron --since today
+### Observations:
+- Checked for scheduled tasks execution.
+- No failures or missed jobs observed.
+
+## Apache2
+### Command:
+sudo journalctl -u apache2 --since today
+### Observations:
+- Verified web server startup and access logs.
+- Confirmed successful response via `curl localhost`.
+
+## Simple Service (Custom)
+### Command:
+tail -f /tmp/simple-service.log
+### Observations:
+- Monitored log entries generated every 10 seconds.
+- Service running as expected and automatically restarts if stopped.
+
+## Notes
+- Logs were checked for errors, warnings, and service activity.
+- This analysis helps in early detection of service issues.
+- Regular log review is recommended for system administration.

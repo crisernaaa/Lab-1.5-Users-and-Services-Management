@@ -1,0 +1,26 @@
+# Troubleshooting Steps Log
+# Generated on: 2025-09-29
+
+## Overview
+This file records all troubleshooting actions taken to resolve issues with users, groups, and services in the lab environment.
+
+---
+
+## Task 1: User Management Issues
+- Verified user creation and passwords:
+  ```bash
+  id alice
+  groups bob
+##Apache2 Service Fails to Start
+
+Symptoms:
+
+Apache2 would not start.
+
+Status indicated configuration erro
+sudo systemctl stop apache2
+sudo mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.backup
+sudo systemctl start apache2
+systemctl status apache2
+sudo mv /etc/apache2/apache2.conf.backup /etc/apache2/apache2.conf
+sudo systemctl start apache2
